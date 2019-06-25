@@ -28,7 +28,7 @@ echo "disk_available: $disk_available"
 
 #Step 2: Set up INSERT statement
 insert_stmt=$(cat <<-END
-INSERT INTO host_usage ("timestamp", memory_free, cpu_idel, cpu_kernel, disk_io, disk_available) VALUES ('${timestamp}', ${memory_free}, ${cpu_idel}, ${cpu_kernel}, ${disk_io}, ${disk_available});
+INSERT INTO host_usage ("timestamp", host_id, memory_free, cpu_idel, cpu_kernel, disk_io, disk_available) VALUES ('${timestamp}', ${host_id}, ${memory_free}, ${cpu_idel}, ${cpu_kernel}, ${disk_io}, ${disk_available});
 END
 )
 echo $insert_stmt
