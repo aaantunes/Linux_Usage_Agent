@@ -1,4 +1,4 @@
-CREATE TABLE PUBLIC.host_info (
+CREATE TABLE PUBLIC.host_info(
 	id SERIAL NOT NULL,
 	hostname VARCHAR NOT NULL,
 	cpu_number INT2 NOT NULL,
@@ -12,7 +12,7 @@ CREATE TABLE PUBLIC.host_info (
 	CONSTRAINT host_info_un UNIQUE (hostname)
 );
 
-CREATE TABLE PUBLIC.host_usage (
+CREATE TABLE PUBLIC.host_usage(
 	"timestamp" TIMESTAMP NOT NULL,
 	host_id SERIAL NOT NULL,
 	memory_free INT4 NOT NULL,
