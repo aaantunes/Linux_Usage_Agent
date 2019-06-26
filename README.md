@@ -6,6 +6,8 @@ This project acts as a internal Cluster Monitor Agents monitoring valuable infor
 
 ### **2.1 Draw a cluster diagram with three Linux hosts, a DB, and agents**
 
+<img src="Host_Agent_Architecture.jpeg.jpg" >
+
 ### **2.2 Table Descriptions**
 `host_info table`:
 
